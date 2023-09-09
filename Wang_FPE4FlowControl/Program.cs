@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace Wang_FPE4FlowControl
 {
+    // Class: Program
+    // Author: Melodie Wang
+    // Purpose: Logic table exercise?
+    // Restrictions: None
     internal class Program
     {
+        // Method: Main
+        // Purpose: recieve two user integer inputs that are not both over 10
+        // Restrictions: None
         static void Main(string[] args)
         {
             int firstInput = -1;
@@ -19,7 +26,7 @@ namespace Wang_FPE4FlowControl
             while(bothGreaterThanTen == true)
             {
                 Console.WriteLine("Please input a positive integer");
-                while (firstInput <= 0)//untill num isn't -1
+                while (firstInput < 0)//untill num isn't -1
                 {
                     try
                     {
@@ -31,7 +38,7 @@ namespace Wang_FPE4FlowControl
                     }
                 }
                 Console.WriteLine("Please input a second positive integer");//getting a second int. same as previous few lines with 1 var change
-                while (secondInput <= 0)
+                while (secondInput < 0)
                 {
                     try
                     {
