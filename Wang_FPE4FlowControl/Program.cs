@@ -8,7 +8,7 @@ namespace Wang_FPE4FlowControl
 {
     // Class: Program
     // Author: Melodie Wang
-    // Purpose: Logic table exercise?
+    // Purpose: Logic table bool exercise?
     // Restrictions: None
     internal class Program
     {
