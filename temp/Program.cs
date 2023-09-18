@@ -93,7 +93,7 @@ namespace Wang_PE7MadLibs
                 // or try/catch with Parse() or Convert.ToInt32()
                 try
                 {
-                    nChoice = Convert.ToInt32(Console.ReadLine());
+                    nChoice = Convert.ToInt32(Console.ReadLine())-1;
                     bValid = true;
                 }
                 catch
