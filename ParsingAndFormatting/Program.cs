@@ -30,7 +30,7 @@ namespace Parsing_Formatting
             {
                 Console.Write("Turn #" + i + ": Enter your guess: ");
 
-                while (userGuess < 0 || userGuess > 100 )//untill num isn't -1
+                while (userGuess < 0 || userGuess > 100 )//untill num isn't 101 (could have just done i-- instead to keep i from progressing further when wrong input)
                 {
                     try
                     {
