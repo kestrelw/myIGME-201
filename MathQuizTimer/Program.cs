@@ -8,7 +8,7 @@ using System.Timers;
 namespace MathQuizTimer
 {
     // Class: Program
-    // Author: David Schuh
+    // Author: David Schuh/Melodie Wang
     // Purpose: A simple MathQuiz application that is limited to +, - and *
     // Restrictions: None
     static class Program
@@ -18,7 +18,7 @@ namespace MathQuizTimer
         static bool bTimeOut = false;
 
         // Method: Main()
-        // Purpose: Play a math quiz.
+        // Purpose: Play a math quiz. ADDED A 5 SEC TIMER 
         // Restrictions: If the username = "David" and he chose "easy", override with "hard"
         static void Main()
         {
