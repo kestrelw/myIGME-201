@@ -25,6 +25,9 @@ namespace Wang_PE7MadLibs
 
             string finalStory = "";
             string playLibs;
+
+            string userName = null;
+
             bool letsPlay = false;
             bool bValid = false;
 
@@ -63,7 +66,6 @@ namespace Wang_PE7MadLibs
 
             input.Close();
 
-            
             Console.WriteLine("Would you like to play Mad Libs? Please enter yes or no.");
             do
             {
@@ -84,11 +86,14 @@ namespace Wang_PE7MadLibs
                 }
             } while (!letsPlay);
 
+            Console.WriteLine("What is your name?");
+            userName = Console.ReadLine();
+
             bValid = false;
             // prompt the user for which Mad Lib they want to play (nChoice)
             do
             {
-                Console.WriteLine("Which Mad Lib would you like to play? Please type a number between 1 and " + numLibs);
+                Console.WriteLine("Which Mad Lib would you like to play "+userName+"? Please type a number between 1 and " + numLibs);
 
                 // or try/catch with Parse() or Convert.ToInt32()
                 try
@@ -129,6 +134,27 @@ namespace Wang_PE7MadLibs
             }
 
             Console.WriteLine(finalStory);
+
+
+            Console.WriteLine("Would you like to play again? Please enter yes or no.");
+            do
+            {
+                playLibs = Console.ReadLine().ToLower();
+                if (playLibs == "yes")
+                {
+                    letsPlay = true;
+                }
+                else if (playLibs == "no")
+                {
+                    Console.WriteLine("Have a good day.");
+                    Environment.Exit(0);
+
+                }
+                else
+                {
+                    Console.WriteLine("Please enter yes or no");
+                }
+            } while (true);
         }
     }
 }
