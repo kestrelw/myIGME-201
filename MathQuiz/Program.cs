@@ -7,8 +7,15 @@ using System.Threading.Tasks;
 namespace MathQuiz
 {
 
-    class Program
+    // Class: Program
+    // Author: Melodie Wang/Prof
+    // Purpose: quizzes user on some mental math
+    // Restrictions: None
+    internal class Program
     {
+        // Method: Main
+        // Purpose: simple math quiz for user to take at various difficulties
+        // Restrictions: None
         static void Main()
         {
             // store user name
