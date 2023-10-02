@@ -16,18 +16,21 @@ namespace DelegateRound
     // Restrictions: None
     class Program
     {
-        // declare the delegate function variable type MyReadLine
-        // which must match the function signature of the target function (Console.ReadLine())
-        // the signature of Console.ReadLine() is: string ReadLine()
+        // Method: Main
+        // Purpose: impliments rounding through an alt funcion referencing math.round
+        // Restrictions: None
         delegate double MyRoundNum(double param1, int param2);
+
         static void Main(string[] args)
         {
             // create a variable of type MyReadLine which we can call like a function
             MyRoundNum myRoundNum;
             // contruct the delegate function reference to point to Console.ReadLine()
-            myRoundNum = new MyRoundNum(Math.Round());
+            myRoundNum = new MyRoundNum(Math.Round);
             // call our new function
-            string sString = myRoundNum();
+            double sNum = myRoundNum(13.4575, 2);
+
+            Console.WriteLine(sNum);
         }
     }
 
