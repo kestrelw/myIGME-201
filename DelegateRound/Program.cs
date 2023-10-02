@@ -23,6 +23,7 @@ namespace DelegateRound
 
         static void Main(string[] args)
         {
+
             // create a variable of type MyReadLine which we can call like a function
             MyRoundNum myRoundNum;
             // contruct the delegate function reference to point to Console.ReadLine()
