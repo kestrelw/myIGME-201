@@ -26,8 +26,7 @@ namespace DelegateRound
 
             // create a variable of type MyReadLine which we can call like a function
             MyRoundNum myRoundNum;
-            // contruct the delegate function reference to point to Console.ReadLine()
-            myRoundNum = new MyRoundNum(Math.Round);
+            // contruct the delegate function reference to point to Math.round
             // call our new function
             double sNum = myRoundNum(13.4575, 2);
 

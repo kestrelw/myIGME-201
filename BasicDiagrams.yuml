@@ -1,0 +1,17 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+
+//[note: You can stick notes on diagrams too!{bg:cornsilk}]
+
+//A
+[+A:HotDrink|+Milk:bool;+Sugar:byte|+Drink();+AddMilk();+AddSugar()]
+
+//B
+[<<Interface>>;ICup|+Color:string;+Volume:byte|+Refill();+Wash()]
+
+//C
+[+A:HotDrink|+Milk:bool;+Sugar:byte|+Drink();+AddMilk();+AddSugar()]->[CupOfCoffee|+BeanType:string]
+
+//D
+[+A:HotDrink|+Milk:bool;+Sugar:byte|+Drink();+AddMilk();+AddSugar()]->[CupOfTea|+LeafType:string]
