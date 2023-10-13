@@ -5,13 +5,20 @@
 //[note: You can stick notes on diagrams too!{bg:cornsilk}]
 
 //A
-[+A:HotDrink|+Milk:bool;+Sugar:byte|+Drink();+AddMilk();+AddSugar()]
+[A:HotDrink||+Milk;+Sugar;+Drink();+AddMilk();+AddSugar()]
 
 //B
-[<<Interface>>;ICup|+Color:string;+Volume:byte|+Refill();+Wash()]
+[I:ICup|Color;Volume;Refill();Wash()]
 
 //C
-[+A:HotDrink|+Milk:bool;+Sugar:byte|+Drink();+AddMilk();+AddSugar()]->[CupOfCoffee|+BeanType:string]
+[CupOfCoffee||+BeanType;+Color;+Volume;+Refill();+Wash()]
+
+[A:HotDrink]<-.-[CupOfCoffee]
+[I:ICup]^[CupOfCoffee]
 
 //D
-[+A:HotDrink|+Milk:bool;+Sugar:byte|+Drink();+AddMilk();+AddSugar()]->[CupOfTea|+LeafType:string]
+[CupOfTea||+LeafType;+Color;+Volume;+Refill();+Wash()]
+
+[A:HotDrink]<-.-[CupOfTea]
+[I:ICup]^[CupOfTea]
+
