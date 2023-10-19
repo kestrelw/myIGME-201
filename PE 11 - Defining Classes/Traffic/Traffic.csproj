@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7C595919-DFCA-4233-A1BD-A6E1B7B2623F}</ProjectGuid>
+    <ProjectGuid>{5986377A-15A5-44F4-93B0-B0E2A8872D1F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Traffic</RootNamespace>
     <AssemblyName>Traffic</AssemblyName>
@@ -41,6 +41,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="Vehicles">
+      <HintPath>..\Vehicles\bin\Debug\Vehicles.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
