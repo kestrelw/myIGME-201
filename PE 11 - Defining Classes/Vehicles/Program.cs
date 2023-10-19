@@ -6,10 +6,23 @@ using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Vehicles
 {
     //Vehicle class hierarchy
+
+    //PassengerCarrier interface
+    public interface IPassengerCarrier
+    {
+        void LoadPassenger();
+    }
+
+
+    // IHeavyLoadCarrier interface
+    public interface IHeavyLoadCarrier
+    {
+
+    }
+
     public abstract class Vehicle
     {
         public virtual void LoadPassenger()
@@ -18,30 +31,14 @@ namespace Vehicles
         }
     }
 
-
-    public abstract class Car
-    {
-        
-    }
-
-    public abstract class Train
+    public abstract class Car : Vehicle
     {
 
     }
 
-    //PassengerCarrier interface
-    public interface IPassengerCarrier
+    public abstract class Train : Vehicle
     {
-        void Passenger()
-        {
 
-        }
-    }
-
-
-    // IHeavyLoadCarrier interface
-    public interface IHeavyLoadCarrier
-    {
     }
 
 
@@ -64,6 +61,11 @@ namespace Vehicles
     }
 
     public class FreightTrain : Train, IHeavyLoadCarrier
+    {
+
+    }
+
+    public class _424DoubleBogey : Train, IHeavyLoadCarrier
     {
 
     }
