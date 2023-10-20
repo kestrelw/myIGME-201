@@ -50,29 +50,31 @@ namespace GifFinder
         {
             if(this != this.MdiParent.ActiveMdiChild)
             {
-                saveFileDialog1.Filter = "Bmp(*.BMP)|*.BPM|Jpg(*JPG)|*.JPG|Png(*.PNG)|*.PNG|Gif(*.GIF)|*.GIF";
-                saveFileDialog1.FileName = this.title;
-                if(saveFileDialog1.ShowDialog()==DialogResult.OK)
+                return;
+            }
+
+            saveFileDialog1.Filter = "Bmp(*.BMP)|*.BPM|Jpg(*JPG)|*.JPG|Png(*.PNG)|*.PNG|Gif(*.GIF)|*.GIF";
+            saveFileDialog1.FileName = this.title;
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                switch (Path.GetExtension(saveFileDialog1.FileName).ToUpper())
                 {
-                    switch (Path.GetExtension(saveFileDialog1.FileName).ToUpper())
-                    {
-                        case ".BMP":
-                            pictureBox1.Image.Save(saveFileDialog1.FileName, System.Drawing.Imaging.ImageFormat.Bmp); 
-                            break;
+                    case ".BMP":
+                        pictureBox1.Image.Save(saveFileDialog1.FileName, System.Drawing.Imaging.ImageFormat.Bmp);
+                        break;
 
-                        case ".JPG":
-                        case ".JPEG":
-                            pictureBox1.Image.Save(saveFileDialog1.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
-                            break;
+                    case ".JPG":
+                    case ".JPEG":
+                        pictureBox1.Image.Save(saveFileDialog1.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        break;
 
-                        case ".PNG":
-                            pictureBox1.Image.Save(saveFileDialog1.FileName, System.Drawing.Imaging.ImageFormat.Png);
-                            break;
+                    case ".PNG":
+                        pictureBox1.Image.Save(saveFileDialog1.FileName, System.Drawing.Imaging.ImageFormat.Png);
+                        break;
 
-                        case ".Gif":
-                            pictureBox1.Image.Save(saveFileDialog1.FileName, System.Drawing.Imaging.ImageFormat.Gif);
-                            break;
-                    }
+                    case ".Gif":
+                        pictureBox1.Image.Save(saveFileDialog1.FileName, System.Drawing.Imaging.ImageFormat.Gif);
+                        break;
                 }
             }
         }
