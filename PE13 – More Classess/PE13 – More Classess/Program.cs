@@ -185,7 +185,10 @@ namespace PE13___More_Classess
 
         public void Remove(Pet pet)
         {
-            petList.Remove(pet);
+            if (pet != null)
+            {
+                petList.Remove(pet);
+            }
         }
 
         public void RemoveAt(int petEL)
