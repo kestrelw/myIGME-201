@@ -21,11 +21,9 @@ namespace Classy
 
         public static void MyMethod(object myObject)
         {
-            if (myObject is IFace myInterfaceObject)
-            {
-                // Call the MyMethod using the interface
-                myInterfaceObject.FacePaint();
-            }
+            IFace iface = (IFace)myObject;
+            // Call the MyMethod using the interface
+            iface.FacePaint();
  
         }
     }
