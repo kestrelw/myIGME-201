@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static PhoneUML.Program;
 
 namespace PhoneUML
 {
@@ -28,7 +29,7 @@ namespace PhoneUML
 
             set
             {
-                this.phoneNumber = value;
+                this.phoneNumber = value; 
             }
         }
 
@@ -37,15 +38,7 @@ namespace PhoneUML
     }
 
 
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-
-        }
-
-    }
-
+    
     public class RotaryPhone : Phone, IPhoneInterface
     {
         public void Answer()
@@ -65,7 +58,11 @@ namespace PhoneUML
         public override void Disconnect()
         {
         }
+
+        
     }
+
+
 
     public class PushButtonPhone : Phone, IPhoneInterface
     {
@@ -86,6 +83,8 @@ namespace PhoneUML
         public override void Disconnect()
         {
         }
+
+        
     }
 
     public class PhoneBooth : PushButtonPhone
@@ -94,6 +93,11 @@ namespace PhoneUML
         public double costPerCall;
         public bool phoneBook;
 
+        public PhoneBooth()
+        {
+            //UsePhone(object obj);
+        }
+
         public void OpenDoor()
         {
         }
@@ -101,6 +105,8 @@ namespace PhoneUML
         public void CloseDoor()
         {
         }
+
+        
     }
 
     public class Tardis : RotaryPhone
@@ -110,6 +116,13 @@ namespace PhoneUML
         private string femaleSideKick;
         public double extreriorSurfaceArea;
         public double interiorVolume;
+
+
+        public Tardis()
+        {
+            //UsePhone(object obj);
+        }
+
 
         public byte WhichDrWho
         {
@@ -130,6 +143,122 @@ namespace PhoneUML
         public void TimeTravel()
         {
         }
+
+        public static bool operator ==(Tardis left, Tardis right)
+        {
+            return left.WhichDrWho == right.WhichDrWho;
+        }
+
+        public static bool operator !=(Tardis left, Tardis right)
+        {
+            return left.WhichDrWho != right.WhichDrWho;
+        }
+
+        public static bool operator >=(Tardis left, Tardis right)
+        {
+            if ((left.WhichDrWho == 10) && (right.WhichDrWho != 10))
+            {
+                return true;
+            }
+            else if ((left.WhichDrWho != 10) && (right.WhichDrWho == 10))
+            {
+                return false;
+            }
+            else
+            {
+                return left.WhichDrWho >= right.WhichDrWho;
+
+            }
+        }
+
+        public static bool operator <=(Tardis left, Tardis right)
+        {
+            if ((left.WhichDrWho == 10) && (right.WhichDrWho != 10))
+            {
+                return false;
+            }
+            else if ((left.WhichDrWho != 10) && (right.WhichDrWho == 10))
+            {
+                return true;
+            }
+            else
+            {
+                return left.WhichDrWho <= right.WhichDrWho;
+
+            }
+        }
+
+        public static bool operator >(Tardis left, Tardis right)
+        {
+            if((left.WhichDrWho == 10) && (right.WhichDrWho != 10))
+            {
+                return true;
+            }
+            else if ((left.WhichDrWho != 10) && (right.WhichDrWho == 10))
+            {
+                return false;
+            }
+            else
+            {
+                return left.WhichDrWho > right.WhichDrWho;
+
+            }
+        }
+
+        public static bool operator <(Tardis left, Tardis right)
+        {
+            if ((left.WhichDrWho == 10) && (right.WhichDrWho != 10))
+            {
+                return true;
+            }
+            else if ((left.WhichDrWho != 10) && (right.WhichDrWho == 10))
+            {
+                return false;
+            }
+            else
+            {
+                return left.WhichDrWho > right.WhichDrWho;
+
+            }
+        }
+    
+        
+
     }
+
+    
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Tardis tardis = new Tardis();
+            PhoneBooth phoneBooth = new PhoneBooth();
+
+            UsePhone(tardis);
+            UsePhone(phoneBooth);
+        }
+
+        static void UsePhone(object obj)
+        {
+            IPhoneInterface iphoneInterface = (IPhoneInterface)obj;
+
+            iphoneInterface.MakeCall();
+            iphoneInterface.HangUp();
+
+            if (iphoneInterface is PhoneBooth)
+            {
+                PhoneBooth phoneBooth = (PhoneBooth)iphoneInterface;
+                phoneBooth.OpenDoor();
+            }
+            else if(iphoneInterface is Tardis)
+            {
+                Tardis tardis = (Tardis)iphoneInterface;
+                tardis.TimeTravel();
+            }
+        }
+
+    }
+
 }
 
