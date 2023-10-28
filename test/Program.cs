@@ -6,7 +6,37 @@ using System.Threading.Tasks;
 
 namespace test
 {
-    internal class Program
+
+
+    public sealed class Circus
+    {
+        public string name;
+        //Console.WriteLine("wheee");
+    }
+
+
+    static class Program
+    {
+        static void Main()
+        {
+
+            Circus myCircus = new Circus();
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*internal class Program
     {
         static void Main(string[] args)
         {
@@ -15,7 +45,25 @@ namespace test
 
         }
 
-        public class Zoo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*public class Zoo
         {
             private string name;
             public string Name
@@ -31,6 +79,7 @@ namespace test
                 }
             }
         }
-    }
+        */
+    //}
 }
 
