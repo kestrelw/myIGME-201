@@ -1,0 +1,16 @@
+// {type:class}
+// {generate:true}
+// {direction:topDown}
+
+[+A:Book|-bookTitle:string;+author:string|+BookTitle:string;+BeginReading():a;+FinishReading():a;+ReadSummary():v]
+[+Paperback||+FlipPage();+DogEar(),+Close();+BeginReading():o;+FinishReading():o]
+[+Kindle||+Scroll();+Bookmark(),+Exit();+BeginReading():o;+FinishReading():o]
+
+[+IEBook||Scroll();Bookmark();Exit()]
+[+IPhysicalBook||FlipPage();DogEar();Close()]
+
+[+A:Book]<-.-[+Kindle]
+[+A:Book]<-.-[+Paperback]
+
+[+IEBook]^[+Kindle]
+[+IPhysicalBook]^[+Paperback]
