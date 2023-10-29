@@ -42,7 +42,7 @@ namespace CafeLib
         }
         public HotDrink(string brand)
         {
-            this.brand = brand;
+            //this.brand = brand;
         }
 
     }
@@ -51,10 +51,11 @@ namespace CafeLib
     {
         public string name;
 
-        public Waiter()
+        /*public Waiter()////////////////////////////////////////
         {
 
         }
+        */
 
         public string Mood
         {
@@ -72,10 +73,11 @@ namespace CafeLib
         public string name;
         public string creditCardNumber;
 
-        public Customer()
+        /*public Customer()
         {
 
         }
+        */
 
         public string Mood
         {
@@ -90,7 +92,7 @@ namespace CafeLib
 
         public CupOfCoffee(string sbrand) : base(sbrand)
         {
-            this.brand = sbrand;
+            //this.brand = sbrand;
         }
         public override void Steam()
         {
@@ -110,7 +112,7 @@ namespace CafeLib
 
         public CupOfTea(bool bCustomerIsWealthy)
         {
-            this.customerIsWealthy = bCustomerIsWealthy;
+            //this.customerIsWealthy = bCustomerIsWealthy;
         }
         public override void Steam()
         {
@@ -136,14 +138,14 @@ namespace CafeLib
 
         public CupOfCocoa(bool marshmallows) : base("Expensive Organic Brand")
         {
-            
+            this.marshmallows = marshmallows;//
         }
 
-        string Source
+        public string Source
         {
             set
             {
-
+                this.source = value;//
             }
         }
 
