@@ -127,14 +127,19 @@ namespace PE13___More_Classess
 
             public abstract void GoToVet();
 
+            public Pet()
+            {
 
+            }
+
+            public Pet(string name, int age)
+            {
+                this.name = name;
+                this.age = age;
+            }
         }
 
-        public Pet(string name, int age)
-        {
-            this.name = name;
-            this.age = age;
-        }
+        
 
 
 

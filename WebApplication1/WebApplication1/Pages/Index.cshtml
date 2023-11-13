@@ -1,0 +1,189 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<style>
+    /* It starts completely empty. I wish you luck. */
+
+    body{
+        margin: 1rem;
+    }
+    img {
+        transition-property: transform;
+        transition-duration: 2s;
+    }
+        img:hover {
+            transform: rotate(-90deg);
+        }
+    #wrapper{
+        display: grid;
+
+        grid-template-areas:
+        "logo" 
+        "menu" 
+        "intro" 
+        "playground" 
+        "footer";
+    }
+    #tetgrid {
+        display: grid;
+        grid-template-columns: repeat(6, 100px);
+        grid-template-rows: repeat(6, 100px);
+    }
+    /*div.tet {
+        overflow: hidden
+    }*/
+    #i {
+        grid-column: 3/-1;
+        grid-row: span 1;
+    }
+    #j {
+        grid-column: 7/-1;
+        grid-row: span 1;
+    }
+    #l {
+        grid-column: 3/-1;
+        grid-row: span 1/3;
+    }
+    #o {
+        grid-column: 1/3;
+        grid-row: 1/span 2;
+    }
+    #s {
+        grid-column: 3/-1;
+        grid-row: span 1;
+    }
+    #t {
+        grid-column: 6/-1;
+        grid-row: span 1/3;
+    }
+    #z img {
+        transform-origin: 0 0;
+        transform:  translateX(205px) rotate(90deg);
+        grid-column: 1/8;
+        grid-row: 2/span 3;
+    }
+    .game {
+        width: 100%;
+        height: 100%;
+        background: url(../images/tetris-logo.png) no-repeat;
+        text-indent: -9999px;
+
+      }
+    h1.game { 
+        grid-area: logo; 
+    }
+    ul.menu { 
+        grid-area: menu; 
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+        .menu a {
+            display: block;
+            background: gray;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.1s ease-in, background-color 0.5s linear;;
+        }
+            .menu a:hover {
+                background: red;
+                color: yellow;
+                transform:scale(1.1);
+            }
+        .menu li {
+            width: 25%;
+        }
+        ul.menu ul li {
+            width:100%;
+        }
+        ul.menu ul {
+            display:none;
+        }
+        ul.menu li:hover ul {
+            display:flex;
+        }
+            .menu .submenu li>a {
+                background:red;
+                color:yellow;
+            }
+            .menu .submenu>a:after {
+                content: "+";
+                padding-left:5px;
+            }
+    #introduction { 
+        grid-area: intro;
+    
+        margin: 2rem 2rem;
+    }
+    #tetgrid { 
+        grid-area: playground; 
+    }
+    footer { 
+        grid-area: footer; 
+    }
+</style>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div id="wrapper">
+    <h1 class="game">Tetris</h1>
+    <section id="introduction">
+        <h2>About this page</h2>
+        <p>Info about this page. </p>
+    </section>
+    <ul class="menu">
+        <li>
+            <a href="http://tetris.com">Official Site</a>
+            <ul class="menu">
+                <li><a href="https://github.com/dccircuit/IGME-235-Fall-2023/blob/main/exercises/tetris-grid.md">Link 1</a></li>
+                <li><a href="https://www.google.com/search?sca_esv=570114396&rlz=1C1UEAD_enUS1040US1040&q=snakes+with+hats&tbm=isch&source=lnms&sa=X&sqi=2&ved=2ahUKEwiMvPPeiNiBAxX9FFkFHcQxB-UQ0pQJegQIDRAB&biw=666&bih=553&dpr=1.5">Link 2</a></li>
+                <li><a href="https://www.google.com/search?q=squishies&tbm=isch&ved=2ahUKEwi2uJzniNiBAxVIN1kFHWTBBN0Q2-cCegQIABAA&oq=squishies&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyBQgAEIAEMgcIABCKBRBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoKCAAQigUQsQMQQzoICAAQsQMQgwE6DQgAEIoFELEDEIMBEENQ2zlYiEZgpUdoAHAAeACAAVuIAYoGkgECMTCYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=BxYbZfaYK8ju5NoP5IKT6A0&bih=553&biw=666&rlz=1C1UEAD_enUS1040US1040">Link 3</a></li>
+            </ul>
+        </li>
+        <li><a href="https://en.wikipedia.org/wiki/Tetris">Wikipedia</a></li>
+        <li><a href="https://thectwc.com">Championships</a></li>
+    </ul>
+
+    <section id="tetgrid">
+        <div class="tet" id="i">
+            <img src="images/Tetris_I.svg" alt="I-Block">
+        </div>
+        <div class="tet" id="j">
+            <img src="images/Tetris_J.svg" alt="J-Block">
+        </div>
+        <div class="tet" id="l">
+            <img src="images/Tetris_L.svg" alt="L-Block">
+        </div>
+        <div class="tet" id="o">
+            <img src="images/Tetris_O.svg" alt="O-Block">
+        </div>
+        <div class="tet" id="s">
+            <img src="images/Tetris_S.svg" alt="S-Block">
+        </div>
+        <div class="tet" id="t">
+            <img src="images/Tetris_T.svg" alt="T-Block">
+        </div>
+        <div class="tet" id="z">
+            <img src="images/Tetris_Z.svg" alt="Z-Block">
+        </div>
+    </section>
+    <footer>
+        <h3>Legal Notice</h3>
+        Tetris © 1985~2019 Tetris Holding.<br>
+        Tetris logos, Tetris theme song and Tetriminos are trademarks of Tetris Holding.<br>
+        The Tetris trade dress is owned by Tetris Holding.<br>
+        Licensed to The Tetris Company.<br>
+        Tetris Game Design by Alexey Pajitnov.<br>
+        Tetris Logo Design by Roger Dean.<br>
+        All Rights Reserved.<br>
+    </footer>
+</div>
