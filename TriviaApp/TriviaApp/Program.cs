@@ -55,7 +55,7 @@ internal class Program
 
             Trivia trivia = JsonConvert.DeserializeObject<Trivia>(s);
 
-            trivia.results[0].question = HttpUtility.HtmlDecode(trivia.results[0].question);//
+            trivia.results[0].question = HttpUtility.HtmlDecode(trivia.results[0].question);////
             trivia.results[0].correct_answer = HttpUtility.HtmlDecode(trivia.results[0].correct_answer);
 
             for (int i = 0; i < trivia.results[0].incorrect_answers.Count; ++i)
