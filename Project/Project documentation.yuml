@@ -1,0 +1,16 @@
+// {type:class} 
+// {generate:true} 
+// {direction:topDown}
+[+A:TigerEye|*homeInfo*|*homeInfo*]
+
+
+[+A:Dining|+restaurantList:List<string>;+visitingChefList:List<string>;+foodTruckList:List<string>;+foodTypeList:List<string>;+mapLocation:double;|+SortRestaurants();+FilterRestaurants()]
+
+
+[+A:Restaurant|-name:string;+Name:string;+visitingChef:string;+visitingChefHours:double;+restaurantDescription:string;+menu:SortedList<string,double>;+openHours:SortedList<string,string>;+busyHours:SortedList<string,string>;+location:double|+SetCurrentRestaurant();+CalculateWait()]
+
+
+[+A:TigerEye]<-.-[+A:Dining]
+
+
+[+A:Dining] <-.- [+A:Restaurant]
