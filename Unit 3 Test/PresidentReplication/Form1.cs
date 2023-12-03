@@ -22,18 +22,14 @@ namespace PresidentReplication
         List<System.Windows.Forms.TextBox> textBoxList = new List<System.Windows.Forms.TextBox>();
 
         ErrorProvider errorProvider = new ErrorProvider();
-        //NotifyIcon notifyIcon1 = new NotifyIcon();
 
         public Form1()
         {
             InitializeComponent();
-
             CreateLists();
-            
 
             try
             {
-                // Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident / 7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; wbx 1.0.0)
                 Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey(
                     @"SOFTWARE\\WOW6432Node\\Microsoft\\Internet Explorer\\MAIN\\FeatureControl\\FEATURE_BROWSER_EMULATION",
                     true);
@@ -45,42 +41,18 @@ namespace PresidentReplication
 
             }
 
-            /*foreach (Control control in this.detailsTabPage.Controls)
-            {
-                // initialize all controls on the page to invalid state for validating whether to enable the OKButton
-                control.Tag = false;
-            }
-            */
-
-
+            //set initial values
             this.pictureBox1.ImageLocation = "https://people.rit.edu/dxsigm/GeorgeWashington.jpeg";
 
-            //pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            //do for alllllllllllllllllllll
-
-            //textbox.KeyPress event handler
-            //this.textBox1.KeyPress += new KeyPressEventHandler(TextBox__KeyPress);
-
-            // exit button disabled
-            exitButton.Enabled = false;
-
-            this.radioButton17.Checked = true;
-
-
-            this.toolStripProgressBar1.Value = 100;
+            exitButton.Enabled = false;// exit button disabled
+            this.radioButton17.Checked = true;//filter all
+            this.toolStripProgressBar1.Value = 100;//timer
 
             this.groupBox2.Text = "https://en.wikipedia.org/wiki/Benjamin_Harrison";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            //navigate webbrowser to url
-            this.webBrowser1.Navigate(this.groupBox2.Text + "#bodyContent");
-            // webbrowser DocumentCopetewd event handler
-            this.webBrowser1.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(WebBrowser1__DocumentCompleted);
-
-            notifyIcon1.Icon = SystemIcons.Exclamation;
-            notifyIcon1.BalloonTipTitle = "Balloon Tip Title";
-            notifyIcon1.BalloonTipText = "Balloon Tip Text.";
-            notifyIcon1.BalloonTipIcon = ToolTipIcon.Error;
-            notifyIcon1.Visible = false;
+            
+            this.webBrowser1.Navigate(this.groupBox2.Text + "#bodyContent");//navigate webbrowser to url
+            this.webBrowser1.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(WebBrowser1__DocumentCompleted);// webbrowser DocumentCopetewd event handler
 
             this.exitButton.Click += new EventHandler(this.ExitButton__Click);
 
@@ -91,7 +63,6 @@ namespace PresidentReplication
                 textBoxList[i].KeyPress += new KeyPressEventHandler(this.TextBox_KeyPress);
 
                 textBoxList[i].MouseHover += new EventHandler(this.TextBox__MouseOver);
-                textBoxList[i].MouseLeave += new EventHandler(this.TextBox__MouseLeave);
             }
 
             this.radioButton17.CheckedChanged += new EventHandler(this.FiltersRadioButton__CheckedChanged);
@@ -102,12 +73,6 @@ namespace PresidentReplication
 
             this.pictureBox1.MouseHover += new EventHandler(this.PictureBox__MouseOver);
             this.pictureBox1.MouseLeave += new EventHandler(this.PictureBox__MouseLeave);
-
-            
-
-
-
-            //errorProvider = new System.Windows.Forms.ErrorProvider();
 
             this.timer.Tick += new EventHandler(Timer__Tick);
         }
@@ -164,7 +129,7 @@ namespace PresidentReplication
             if (this.toolStripProgressBar1.Value == 0)
             {
                 this.timer.Stop();
-                this.toolStripProgressBar1.Value = 100;
+                this.toolStripProgressBar1.Value = 100;//reset
 
                 //reset all text boxes to 0
                 for (int i = 0; i < 16; i++)
@@ -282,12 +247,14 @@ namespace PresidentReplication
                         radioButtonList[i].Visible = true;
                         textBoxList[i].Visible = true;
                     }
+
+                    this.radioButton1.Checked = true;//filter all
                 }
                 if (rb == radioButtonList[17])//democrat
                 {
                     for (int i = 0; i < 16; i++)
                     {
-                        if (radioButtonList[i].Tag != "Democrat")
+                        if ((string)radioButtonList[i].Tag != "Democrat")
                         {
                             radioButtonList[i].Visible = false;
                             textBoxList[i].Visible = false;
@@ -298,12 +265,14 @@ namespace PresidentReplication
                             textBoxList[i].Visible = true;
                         }
                     }
+
+                    this.radioButton2.Checked = true;//filter all
                 }
                 if (rb == radioButtonList[18])//republican
                 {
                     for (int i = 0; i < 16; i++)
                     {
-                        if (radioButtonList[i].Tag != "Republican")
+                        if ((string)radioButtonList[i].Tag != "Republican")
                         {
                             radioButtonList[i].Visible = false;
                             textBoxList[i].Visible = false;
@@ -314,6 +283,7 @@ namespace PresidentReplication
                             textBoxList[i].Visible = true;
                         }
                     }
+                    this.radioButton1.Checked = true;//filter all
                 }
                 if (rb == radioButtonList[19])//dem-repub
                 {
@@ -330,6 +300,7 @@ namespace PresidentReplication
                             textBoxList[i].Visible = true;
                         }
                     }
+                    this.radioButton16.Checked = true;//filter all
                 }
                 if (rb == radioButtonList[20])//fed
                 {
@@ -346,6 +317,7 @@ namespace PresidentReplication
                             textBoxList[i].Visible = true;
                         }
                     }
+                    this.radioButton13.Checked = true;//filter all
                 }
             }
         }
@@ -360,16 +332,12 @@ namespace PresidentReplication
                 htmlElement.MouseOver += new HtmlElementEventHandler(this.webLink__MouseOver);
                 htmlElement.MouseLeave += new HtmlElementEventHandler(this.webLink__MouseLeave);
             }
-            
-
 
             wb.DocumentCompleted -= WebBrowser1__DocumentCompleted;
         }
 
         private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //System.Windows.Forms.TextBox tb = (System.Windows.Forms.TextBox)sender;
-
             if (Char.IsDigit(e.KeyChar) || e.KeyChar == '\b')
             {
                 e.Handled = false;
@@ -378,9 +346,6 @@ namespace PresidentReplication
             {
                 e.Handled = true;//ignored
             }
-
-            
-
         }
 
         private void TextBox_TextChanged(object sender, EventArgs e)
@@ -424,14 +389,13 @@ namespace PresidentReplication
             //if none wrong then reach this point
             this.timer.Stop();//pause timer
             this.webBrowser1.Navigate("https://i.pinimg.com/originals/00/ed/7e/00ed7ea3401fe1605ecaffeca76dc7ec.gif");//load fireworks link
-            //ORIGINAL LINK WAS NOT WRKING FOR ME 
+            //ORIGINAL LINK WAS NOT WORKING FOR ME 
             this.groupBox2.Text = "https://i.pinimg.com/originals/00/ed/7e/00ed7ea3401fe1605ecaffeca76dc7ec.gif";
             this.webBrowser1.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(WebBrowser1__DocumentCompleted);
             exitButton.Enabled = true;//enable exit button
 
         }
 
-        
 
         private void PictureBox__MouseOver(object sender, EventArgs e)
         {
@@ -446,39 +410,19 @@ namespace PresidentReplication
         private void TextBox__MouseOver(object sender, EventArgs e)
         {
             System.Windows.Forms.TextBox rb = (System.Windows.Forms.TextBox)sender;
-
-
-
-            //notifyIcon1.Visible = true;
-            Console.WriteLine("hovering: " + notifyIcon1.Visible);
-            //notifyIcon1.ShowBalloonTip(20000, "ioshf", "oidogh", ToolTipIcon.Info);
-            //toolTip1.SetToolTip(rb, notifyIcon1.Text));
-
-
-
-
-
+            //Console.WriteLine("hovering: " + notifyIcon1.Visible);
 
             toolTip1.ShowAlways = true;
-            //toolTip1.SetToolTip(rb, "My button1");
-
-
-            //this.toolTip1.Show("yfhxcghvk",rb, MousePosition.X, MousePosition.Y, 1500);
             toolTip1.SetToolTip(rb, "Which # President?");
-            toolTip1.IsBalloon = true;
-        }
-
-        private void TextBox__MouseLeave(object sender, EventArgs e)
-        {
-            //pictureBox1.Size = new System.Drawing.Size(140, 220);
+            toolTip1.IsBalloon = true;//text bubbble
         }
 
         private void webLink__MouseOver(object sender, HtmlElementEventArgs e)
         {
             HtmlElement htmlElement = (HtmlElement)sender;
             toolTip1.Show("Professor Schuh for President!", this.webBrowser1, e.MousePosition.X + 5, e.MousePosition.Y + 15, 30000);
-
             toolTip1.ShowAlways = true;
+            toolTip1.IsBalloon = false;
         }
 
         private void webLink__MouseLeave(object sender, HtmlElementEventArgs e)
