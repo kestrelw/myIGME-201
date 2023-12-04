@@ -64,12 +64,11 @@ namespace PresidentReplication
 
                 textBoxList[i].MouseHover += new EventHandler(this.TextBox__MouseOver);
             }
+            for (int i = 16; i < 21; i++)
+            {
+                radioButtonList[i].CheckedChanged += new EventHandler(this.FiltersRadioButton__CheckedChanged);
+            }
 
-            this.radioButton17.CheckedChanged += new EventHandler(this.FiltersRadioButton__CheckedChanged);
-            this.radioButton18.CheckedChanged += new EventHandler(this.FiltersRadioButton__CheckedChanged);
-            this.radioButton19.CheckedChanged += new EventHandler(this.FiltersRadioButton__CheckedChanged);
-            this.radioButton20.CheckedChanged += new EventHandler(this.FiltersRadioButton__CheckedChanged);
-            this.radioButton21.CheckedChanged += new EventHandler(this.FiltersRadioButton__CheckedChanged);
 
             this.pictureBox1.MouseHover += new EventHandler(this.PictureBox__MouseOver);
             this.pictureBox1.MouseLeave += new EventHandler(this.PictureBox__MouseLeave);
