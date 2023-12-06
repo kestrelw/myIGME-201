@@ -96,8 +96,8 @@ namespace MyEditor
             {
                 this.timer.Stop();
 
-                string performance = "Congratulations! You typed "+ Math.Round(this.richTextBox.TextLength/30.0, 2)+" letters per second";
-                MessageBox.Show(performance);
+                //string performance = "Congratulations! You typed "+ Math.Round(this.richTextBox.TextLength/30.0, 2)+" letters per second";
+                //MessageBox.Show(performance);
             }
         }
 
