@@ -357,11 +357,11 @@ namespace PresidentReplication
 
             if ((string)tb.Text != (string)tb.Tag && (string)tb.Text != "0" && tb.Text.Length!=0)
             {
-                this.errorProvider.SetError(tb, "This number is incorrect.");
+                this.errorProvider.SetError(tb, "This is the wrong number.");
             }
             else
             {
-                Console.WriteLine("Correct");
+                //Console.WriteLine("Correct");
                 this.errorProvider.SetError(tb, null);
             }
 
