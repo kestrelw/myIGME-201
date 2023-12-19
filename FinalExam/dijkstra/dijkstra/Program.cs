@@ -182,8 +182,6 @@ namespace dijkstra
             List<Node> prioQueue = new List<Node>();
             prioQueue.Add(start);
 
-            // next 2 lines are equivalent
-            //Func<Node, int> nodeOrderBy = new Func<Node, int>(NodeOrderBy);
             Func<Node, int> nodeOrderBy = NodeOrderBy;
 
             do
@@ -192,20 +190,9 @@ namespace dijkstra
                 // option #1, use .Sort() which sorts in place
                 prioQueue.Sort();
 
-                // option #2, use .OrderBy() with a delegate method or lambda expression 
-                // the next 5 lines are equivalent from descriptive to abbreviated:
-                prioQueue = prioQueue.OrderBy(nodeOrderBy).ToList();
-                prioQueue = prioQueue.OrderBy(delegate (Node n) { return n.minCostToStart; }).ToList();
-                prioQueue = prioQueue.OrderBy((Node n) => { return n.minCostToStart; }).ToList();
-                prioQueue = prioQueue.OrderBy((n) => { return n.minCostToStart; }).ToList();
-                prioQueue = prioQueue.OrderBy((n) => n.minCostToStart).ToList();
-                prioQueue = prioQueue.OrderBy(n => n.minCostToStart).ToList();
-
                 Node node = prioQueue.First();
                 prioQueue.Remove(node);
                 foreach (Edge cnn in node.edges)
-                // if we do not sort each list of edges after populating them for a node,
-                // we can create a temporary sorted list for this loop
                 //foreach (Edge cnn in node.edges.OrderBy(delegate(Edge n) { return n.cost; }))
                 {
                     // look at the neighbor connected to this edge

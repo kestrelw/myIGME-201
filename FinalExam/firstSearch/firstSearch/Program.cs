@@ -80,7 +80,7 @@ namespace firstSearch
         //static bool bWaitingForMove = false;
 
         // the current numeric representation of the coin state
-        static int nState = 0;
+        static int nState = (int)Color.Red;
 
         // the user-entered string representation of the desired coin state
         //static string sUserState;
@@ -142,46 +142,53 @@ namespace firstSearch
             game[(int)Color.Grey].AddEdge(0, game[(int)Color.Blue]);
             game[(int)Color.Grey].edges.Sort();
 
-            // the current string representation of the coin state
-            //string sState;
+            // the current string representation of the color state
+            string sState;
 
-            // the user-entered numeric representation of the desired coin state
-            //int nUserState;
 
             // create thread running DFS() for AI fetching the next move
             Thread t = new Thread(DFS);
+
             t.Start();
+
+            // while not all visited
+            while (game.Any(Color => !Color.visited))
+            {
+                // convert the current numeric state to a string
+                sState = ((Color)nState).ToString();
+
+                // output the current state
+                //Console.WriteLine("Current color: "+sState);
+
+
+#if USE_MATRIX
+
+#else
+
+            }
+
+
+#endif
+            t.Abort();
         }
 
-        // A function used by DFS 
         static void DFSUtil(int v, bool[] visited)
         {
-            // wait for the request for the next move
-            //while (!bWaitingForMove) ;
-            //while (bWaitingForMove == false) ;
 
-            // Mark the current node as visited 
             visited[v] = true;
 
-           // sUserState = ((ECoinState)v).ToString();
-
-            // print the current node 
-            Console.Write(v + " ");
-
-            // lock the mutex to change the shared boolean variable
-            lock (lockObject)
-            {
-                // no longer waiting for move
-                //bWaitingForMove = false;
-            }
+            string colorName = ((Color)v).ToString();
+            Console.WriteLine(colorName);
 
             // Recur for all the vertices 
             // adjacent to this vertex if there are any
             int[] thisStateList = lGraph[v];
             if (thisStateList != null)
             {
+                //Console.WriteLine("thisStateList length: " + thisStateList.Length);
                 foreach (int n in thisStateList)
                 {
+                    //Console.WriteLine(n);
                     if (!visited[n])
                     {
                         DFSUtil(n, visited);
@@ -200,7 +207,7 @@ namespace firstSearch
 
             // Call the recursive helper function 
             // to print DFS traversal 
-            DFSUtil(nState, visited);
+            DFSUtil((int)Color.Red, visited);
         }
 
     }
