@@ -38,7 +38,7 @@ namespace firstSearch
            { -1   , -1   , 1    , -1   , -1   , -1   , -1   , -1  },
            { -1   , 1    , -1   , -1   , 0    , -1   , -1   , -1 }
         };
-        // Red     Orange    Yellow   Green     Blue    Indigo   Purple   Grey
+                 // Red     Orange    Yellow   Green     Blue    Indigo   Purple   Grey
         /* Red    { null   , null   , null   , null   , null   , 1      , null   , 5    },
         * Orange  { null   , null   , null   , null   , null   , null   , 1      , null },
         * Yellow  { null   , null   , null   , 6      , null   , null   , null   , null },
@@ -183,12 +183,15 @@ namespace firstSearch
             // Recur for all the vertices 
             // adjacent to this vertex if there are any
             int[] thisStateList = lGraph[v];
+            //Console.WriteLine("thisStateList: " + thisStateList);
+
             if (thisStateList != null)
             {
                 //Console.WriteLine("thisStateList length: " + thisStateList.Length);
                 foreach (int n in thisStateList)
                 {
-                    //Console.WriteLine(n);
+                    //Console.WriteLine("int n in thisStateList: "+n);
+                    //Console.WriteLine("194 "+((Color)n).ToString());
                     if (!visited[n])
                     {
                         DFSUtil(n, visited);
