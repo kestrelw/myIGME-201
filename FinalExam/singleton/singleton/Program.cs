@@ -14,11 +14,11 @@ namespace singleton
         private static PlayerSettings instance = new PlayerSettings();
 
         // Player settings properties
-        public string player_name;
-        public int level;
-        public int hp;
-        public List<string> inventory;
-        public string license_key;
+        public string player_name { get; set; }
+        public int level { get; set; }
+        public int hp { get; set; }
+        public List<string> inventory { get; set; }
+        public string license_key { get; set; }
 
         // Private constructor to prevent instantiation
         private PlayerSettings()
@@ -54,17 +54,17 @@ namespace singleton
                 PlayerSettings loadedSettings = JsonConvert.DeserializeObject<PlayerSettings>(json);
 
                 // Update settings from the loaded file
-                PlayerName = loadedSettings.PlayerName;
-                Level = loadedSettings.Level;
-                Hp = loadedSettings.Hp;
-                Inventory = loadedSettings.Inventory;
-                LicenseKey = loadedSettings.LicenseKey;
+                player_name = loadedSettings.player_name;
+                level = loadedSettings.level;
+                hp = loadedSettings.hp;
+                inventory = loadedSettings.inventory;
+                license_key = loadedSettings.license_key;
 
                 Console.WriteLine("Settings loaded from file.");
             }
             else
             {
-                Console.WriteLine("File not found. Default settings will be used.");
+                Console.WriteLine("File not found. Defaults used.");
             }
         }
     }
@@ -77,23 +77,15 @@ namespace singleton
             string filePath = "player_settings.json";
 
             // Get the singleton instance
-            PlayerSettings settings = PlayerSettings.Instance;
+            PlayerSettings settings = PlayerSettings.GetInstance();
 
-            // Display current settings
-            //Console.WriteLine("Current Settings:");
-            //Console.WriteLine($"Player Name: {settings.PlayerName}");
-            //Console.WriteLine($"Level: {settings.Level}");
-            //Console.WriteLine($"HP: {settings.Hp}");
-            //Console.WriteLine($"Inventory: {string.Join(", ", settings.Inventory)}");
-            //Console.WriteLine($"License Key: {settings.LicenseKey}");
-            //Console.WriteLine();
 
             // Modify settings
-            settings.PlayerName = "dschuh";
-            settings.Level = 4;
-            settings.Hp = 99;
-            settings.Inventory = new List<string> { "spear", "water bottle", "hammer", "sonic screwdriver", "cannonball", "wood", "Scooby snack", "Hydra", "poisonous potato", "dead bush", "repair powder" };
-            settings.LicenseKey = "DFGU99-1454";
+            settings.player_name = "dschuh";
+            settings.level = 4;
+            settings.hp = 99;
+            settings.inventory = new List<string> { "spear", "water bottle", "hammer", "sonic screwdriver", "cannonball", "wood", "Scooby snack", "Hydra", "poisonous potato", "dead bush", "repair powder" };
+            settings.license_key = "DFGU99-1454";
 
             // Save modified settings
             settings.SaveSettings(filePath);
@@ -101,13 +93,6 @@ namespace singleton
             // Load settings from file
             settings.LoadSettings(filePath);
 
-            // Display updated settings
-            //Console.WriteLine("\nUpdated Settings:");
-            //Console.WriteLine($"Player Name: {settings.PlayerName}");
-            //Console.WriteLine($"Level: {settings.Level}");
-            //Console.WriteLine($"HP: {settings.Hp}");
-            //Console.WriteLine($"Inventory: {string.Join(", ", settings.Inventory)}");
-            //Console.WriteLine($"License Key: {settings.LicenseKey}");
         }
     }
 }
