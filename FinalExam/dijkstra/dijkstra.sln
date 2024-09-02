@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dijkstra", "dijkstra\dijkstra.csproj", "{90DA334C-ABDA-406F-BC0F-C12067517F7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90DA334C-ABDA-406F-BC0F-C12067517F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90DA334C-ABDA-406F-BC0F-C12067517F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90DA334C-ABDA-406F-BC0F-C12067517F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90DA334C-ABDA-406F-BC0F-C12067517F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0751D67-67DE-45E8-BDE7-C8080BB996F8}
+	EndGlobalSection
+EndGlobal
