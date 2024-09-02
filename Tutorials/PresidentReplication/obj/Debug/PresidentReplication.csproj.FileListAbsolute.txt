@@ -1,0 +1,10 @@
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\PresidentReplication\bin\Debug\PresidentReplication.exe.config
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\PresidentReplication\bin\Debug\PresidentReplication.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\PresidentReplication\bin\Debug\PresidentReplication.pdb
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\PresidentReplication\obj\Debug\PresidentReplication.csproj.AssemblyReference.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\PresidentReplication\obj\Debug\PresidentReplication.Form1.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\PresidentReplication\obj\Debug\PresidentReplication.Properties.Resources.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\PresidentReplication\obj\Debug\PresidentReplication.csproj.GenerateResource.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\PresidentReplication\obj\Debug\PresidentReplication.csproj.CoreCompileInputs.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\PresidentReplication\obj\Debug\PresidentReplication.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\PresidentReplication\obj\Debug\PresidentReplication.pdb

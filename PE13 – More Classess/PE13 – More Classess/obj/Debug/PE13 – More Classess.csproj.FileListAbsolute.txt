@@ -1,0 +1,7 @@
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE13 – More Classess\PE13 – More Classess\bin\Debug\PE13 – More Classess.exe.config
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE13 – More Classess\PE13 – More Classess\bin\Debug\PE13 – More Classess.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE13 – More Classess\PE13 – More Classess\bin\Debug\PE13 – More Classess.pdb
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE13 – More Classess\PE13 – More Classess\obj\Debug\PE13 – More Classess.csproj.AssemblyReference.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE13 – More Classess\PE13 – More Classess\obj\Debug\PE13 – More Classess.csproj.CoreCompileInputs.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE13 – More Classess\PE13 – More Classess\obj\Debug\PE13 – More Classess.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE13 – More Classess\PE13 – More Classess\obj\Debug\PE13 – More Classess.pdb

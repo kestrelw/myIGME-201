@@ -1,0 +1,12 @@
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Unit 3 Test\UserInterfaceFromHell\bin\Debug\UserInterfaceFromHell.exe.config
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Unit 3 Test\UserInterfaceFromHell\bin\Debug\UserInterfaceFromHell.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Unit 3 Test\UserInterfaceFromHell\bin\Debug\UserInterfaceFromHell.pdb
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Unit 3 Test\UserInterfaceFromHell\obj\Debug\UserInterfaceFromHell.csproj.AssemblyReference.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Unit 3 Test\UserInterfaceFromHell\obj\Debug\UserInterfaceFromHell.Form1.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Unit 3 Test\UserInterfaceFromHell\obj\Debug\UserInterfaceFromHell.Form2.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Unit 3 Test\UserInterfaceFromHell\obj\Debug\UserInterfaceFromHell.Properties.Resources.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Unit 3 Test\UserInterfaceFromHell\obj\Debug\UserInterfaceFromHell.csproj.GenerateResource.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Unit 3 Test\UserInterfaceFromHell\obj\Debug\UserInterfaceFromHell.csproj.CoreCompileInputs.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Unit 3 Test\UserInterfaceFromHell\obj\Debug\UserInterfaceFromHell.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Unit 3 Test\UserInterfaceFromHell\obj\Debug\UserInterfaceFromHell.pdb
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Unit 3 Test\UserInterfaceFromHell\obj\Debug\UserInterfaceFromHell.Form3.resources

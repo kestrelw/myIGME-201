@@ -1,0 +1,13 @@
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\GifFinder\obj\Debug\GifFinder.csproj.AssemblyReference.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\GifFinder\obj\Debug\GifFinder.GifFinder.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\GifFinder\obj\Debug\GifFinder.SearchForm.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\GifFinder\obj\Debug\GifFinder.Properties.Resources.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\GifFinder\obj\Debug\GifFinder.UserControl1.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\GifFinder\obj\Debug\GifFinder.csproj.GenerateResource.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\GifFinder\obj\Debug\GifFinder.csproj.CoreCompileInputs.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\GifFinder\bin\Debug\GifFinder.exe.config
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\GifFinder\bin\Debug\GifFinder.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\GifFinder\bin\Debug\GifFinder.pdb
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\GifFinder\obj\Debug\GifFinder.ImageForm.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\GifFinder\obj\Debug\GifFinder.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\GifFinder\obj\Debug\GifFinder.pdb

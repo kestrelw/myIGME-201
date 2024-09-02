@@ -1,0 +1,7 @@
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\StructToClass\bin\Debug\StructToClass.exe.config
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\StructToClass\bin\Debug\StructToClass.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\StructToClass\bin\Debug\StructToClass.pdb
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\StructToClass\obj\Debug\StructToClass.csproj.AssemblyReference.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\StructToClass\obj\Debug\StructToClass.csproj.CoreCompileInputs.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\StructToClass\obj\Debug\StructToClass.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\StructToClass\obj\Debug\StructToClass.pdb

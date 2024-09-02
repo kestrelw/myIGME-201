@@ -1,0 +1,7 @@
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\Tuple\bin\Debug\Tuple.exe.config
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\Tuple\bin\Debug\Tuple.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\Tuple\bin\Debug\Tuple.pdb
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\Tuple\obj\Debug\Tuple.csproj.AssemblyReference.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\Tuple\obj\Debug\Tuple.csproj.CoreCompileInputs.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\Tuple\obj\Debug\Tuple.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\UnitTest2\Tuple\obj\Debug\Tuple.pdb

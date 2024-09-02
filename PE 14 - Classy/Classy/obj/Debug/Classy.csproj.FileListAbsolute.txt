@@ -1,0 +1,7 @@
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE 14 - Classy\Classy\bin\Debug\Classy.exe.config
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE 14 - Classy\Classy\bin\Debug\Classy.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE 14 - Classy\Classy\bin\Debug\Classy.pdb
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE 14 - Classy\Classy\obj\Debug\Classy.csproj.AssemblyReference.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE 14 - Classy\Classy\obj\Debug\Classy.csproj.CoreCompileInputs.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE 14 - Classy\Classy\obj\Debug\Classy.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\PE 14 - Classy\Classy\obj\Debug\Classy.pdb

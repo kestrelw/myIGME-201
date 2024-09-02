@@ -1,0 +1,10 @@
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Group1Project\Dining\bin\Debug\Dining.exe.config
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Group1Project\Dining\bin\Debug\Dining.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Group1Project\Dining\bin\Debug\Dining.pdb
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Group1Project\Dining\obj\Debug\Dining.csproj.AssemblyReference.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Group1Project\Dining\obj\Debug\Dining.Form1.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Group1Project\Dining\obj\Debug\Dining.Properties.Resources.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Group1Project\Dining\obj\Debug\Dining.csproj.GenerateResource.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Group1Project\Dining\obj\Debug\Dining.csproj.CoreCompileInputs.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Group1Project\Dining\obj\Debug\Dining.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Group1Project\Dining\obj\Debug\Dining.pdb

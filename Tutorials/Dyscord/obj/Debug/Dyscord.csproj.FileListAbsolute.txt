@@ -1,0 +1,11 @@
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\Dyscord\obj\Debug\Dyscord.csproj.AssemblyReference.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\Dyscord\obj\Debug\Dyscord.SettingsForm.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\Dyscord\obj\Debug\Dyscord.DyscordForm.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\Dyscord\obj\Debug\Dyscord.Properties.Resources.resources
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\Dyscord\obj\Debug\Dyscord.csproj.GenerateResource.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\Dyscord\obj\Debug\Dyscord.csproj.CoreCompileInputs.cache
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\Dyscord\bin\Debug\Dyscord.exe.config
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\Dyscord\bin\Debug\Dyscord.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\Dyscord\bin\Debug\Dyscord.pdb
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\Dyscord\obj\Debug\Dyscord.exe
+C:\Users\mail4\OneDrive\Documents\Classes\myIGME-201\GitHub\myIGME-201\Tutorials\Dyscord\obj\Debug\Dyscord.pdb
